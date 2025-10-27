@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WAMARI Shoe Store — stylish, comfortable shoes for every occasion. Shop boots, sneakers, sandals and more.">
+    <meta name="theme-color" content="#e9d8a6">
+    <!-- Open Graph / Social -->
+    <meta property="og:title" content="WAMARI Shoe Store">
+    <meta property="og:description" content="Step into style with WAMARI — find your perfect pair of shoes.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/shoe1.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="images/favicon.png">
+    <title>WAMARI Shoe Store</title>
+    <link rel="stylesheet" href="wamari.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <noscript>
+        <div class="no-js">JavaScript is required for full functionality. Some features may not work.</div>
+    </noscript>
+    <header>
+        <nav aria-label="Main navigation">
+            <div class="logo">WAMARI</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="cart-icon">
+                <img src="images/cart.jpg" alt="Shopping cart">
+                <span id="cart-count" aria-live="polite" aria-atomic="true">0</span>
+            </div>
+        </nav>
+        <div class="hero">
+            <h1>Step into Style with WAMARI</h1>
+            <p>Find your perfect pair of shoes.</p>
+            <a href="#shop" class="cta-button">Shop Now</a>
+        </div>
+    </header>
+
+    <section id="shop">
+        <h2>Featured Shoes</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="images/shoe1.jpg" alt="Leather Boots" loading="lazy" width="400" height="300">
+                <h3>Leather Boots</h3>
+                <p class="price">$120.00</p>
+                <button type="button" class="add-to-cart" data-name="Leather Boots" data-price="120.00">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/shoe2.jpg" alt="Running Shoes" loading="lazy" width="400" height="300">
+                <h3>Running Shoes</h3>
+                <p class="price">$80.00</p>
+                <button type="button" class="add-to-cart" data-name="Running Shoes" data-price="80.00">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/shoe3.jpg" alt="Casual Sneakers" loading="lazy" width="400" height="300">
+                <h3>Casual Sneakers</h3>
+                <p class="price">$60.00</p>
+                <button type="button" class="add-to-cart" data-name="Casual Sneakers" data-price="60.00">Add to Cart</button>
+            </div>
+            <!-- More products here -->
+             <div class="product">
+                <img src="images/shoe4.jpg" alt="High Heels" loading="lazy" width="400" height="300">
+                <h3>High Heels</h3>
+                <p class="price">$95.00</p>
+                <button type="button" class="add-to-cart" data-name="High Heels" data-price="95.00">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/shoe5.jpg" alt="Sandals" loading="lazy" width="400" height="300">
+                <h3>Sandals</h3>
+                <p class="price">$45.00</p>
+                <button type="button" class="add-to-cart" data-name="Sandals" data-price="45.00">Add to Cart</button>
+            </div>
+             <div class="product">
+                <img src="images/shoe6.jpg" alt="Boots" loading="lazy" width="400" height="300">
+                <h3>Boots</h3>
+                <p class="price">$55.00</p>
+                <button type="button" class="add-to-cart" data-name="Boots" data-price="55.00">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <div id="cart-announcer" class="sr-only" aria-live="polite"></div>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm" aria-describedby="contact-feedback">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div id="contact-feedback" role="status" aria-live="polite" class="sr-only"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 WAMARI Shoe Store</p>
+        <div class="social-icons">
+            <a href="#" target="_blank" aria-label="Facebook"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="#" target="_blank" aria-label="X, formerly Twitter"><img src="images/x.png" alt="X"></a>
+            <a href="#" target="_blank" aria-label="Instagram"><img src="images/instagram.png" alt="Instagram"></a>
+        </div>
+    </footer>
+
+    <script src="wamari.js"></script>
+</body>
+</html>
+
+                
